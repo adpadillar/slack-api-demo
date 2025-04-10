@@ -1,0 +1,5 @@
+streamlit
+slack-sdk
+python-dotenv
+black
+pylint
