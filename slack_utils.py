@@ -62,7 +62,7 @@ def send_file(channel, file_path, title=""):
     channel_id = get_channel_id(channel)
 
     try:
-        response = client.files_upload_v2(
+        client.files_upload_v2(
             channel=channel_id,
             file=file_path,
             title=title,
