@@ -38,8 +38,9 @@ def send_image(channel, image_url, text=""):
         return False, f"Error: {e.response['error']}"
 
 def get_channel_id(channel_name):
+
     client = get_slack_client()
-    channel_name = channel_name.startswith("#") and channel_name[1:] or channel_name
+    channel_name = channel_name[1:] if channel_name.startswith("#") else channel_name
     try:
         result = client.conversations_list()
 

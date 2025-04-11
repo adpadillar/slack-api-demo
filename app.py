@@ -24,7 +24,7 @@ if message_type == "Text Message":
 
 elif message_type == "Image Message":
     image_url = st.text_input("Enter image URL")
-    image_caption = st.text_input("Image caption (optional)")
+    image_caption = st.text_input("Image caption")
     if st.button("Send Image"):
         if image_url:
             success, response = send_image(channel, image_url, image_caption)
