@@ -5,5 +5,5 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Access environment variables
-SLACK_TOKEN = os.getenv('SLACK_BOT_TOKEN')  # Changed from APP_TOKEN to BOT_TOKEN
+SLACK_TOKEN = os.getenv('SLACK_BOT_TOKEN')
 DEFAULT_CHANNEL = os.getenv('SLACK_DEFAULT_CHANNEL')
