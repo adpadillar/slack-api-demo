@@ -2,6 +2,14 @@
 
 A simple Streamlit web application that allows you to send messages, images, and files to Slack channels.
 
+## Team
+
+- Marcela Beatriz De La Rosa Barrios A01637239
+- Sebastián Denhi Vega Saint Martín A01637397
+- Ángela Estefanía Aguilar Medina  A01637703
+- Axel Daniel Padilla Reyes A01642700
+- Diana Nicole Arana Sánchez A01642924
+
 ## Features
 
 - Send text messages to Slack channels
