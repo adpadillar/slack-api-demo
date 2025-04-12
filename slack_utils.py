@@ -12,7 +12,7 @@ def send_message(channel, text):
 
     try:
         # ref: https://tools.slack.dev/python-slack-sdk/web/#sending-a-message
-        response = client.chat_postMessage(channel=channel, text=text)
+        client.chat_postMessage(channel=channel, text=text)
         return True, "Message sent successfully!"
     except SlackApiError as e:
         return False, f"Error: {e.response['error']}"
@@ -22,7 +22,7 @@ def send_image(channel, image_url, text=""):
     client = get_slack_client()
 
     try:
-        response = client.chat_postMessage(
+        client.chat_postMessage(
             channel=channel,
             blocks=[
                 {
